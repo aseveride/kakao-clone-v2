@@ -34,6 +34,21 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+
+  animation: badgeBig 1s ease-in-out infinite;
+}
+
+@keyframes badgeBig {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: none;
+  }
 }
 
 @keyframes showNavBar {
