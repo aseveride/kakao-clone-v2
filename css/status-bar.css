@@ -12,24 +12,28 @@
 .status-bar i:last-child {
   font-size: 14px;
   color: red;
-  animation: battery 3s linear infinite;
+  animation: battery 1s linear infinite;
 }
 .status-bar .status-bar__battery-level {
   margin-left: 3px;
-  animation: blink 1s linear infinite;
+  font-weight: 600;
+  /*animation: blink 1.5s linear infinite;*/
 }
 
 @keyframes battery {
   0% {
-    transform: none;
+    transform: rotate(-30deg);
   }
   20% {
-    transform: rotate(-45deg);
+    transform: rotate(30deg);
   }
   40% {
-    transform: none;
+    transform: rotate(-30deg);
   }
   60% {
+    transform: rotate(30deg);
+  }
+  80% {
     transform: none;
   }
   100% {
@@ -39,12 +43,15 @@
 
 @keyframes blink {
   0% {
-    color: inherit;
-  }
-  50% {
+    opacity: 1;
     color: red;
   }
-  100% {
+  50% {
+    opacity: 0;
     color: inherit;
+  }
+  100% {
+    opacity: 1;
+    color: red;
   }
 }
