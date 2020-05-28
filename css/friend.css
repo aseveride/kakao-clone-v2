@@ -13,8 +13,11 @@
   width: 70px;
 }
 
-.friend__avatar.g-avatar {
+.friend__avatar.m-avatar {
   width: 60px;
+}
+.friend__avatar.s-avatar {
+  width: 29px;
 }
 
 .friend .friend__column {
@@ -24,6 +27,63 @@
 
 .friend .friend__avatar {
   margin-right: 15px;
+}
+.friend__avatar.s-avatar {
+  margin-right: 0px;
+  margin-bottom: 1px;
+}
+.img-wrapper {
+  padding: 0px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 15px;
+}
+.bone {
+  width: 29px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1px;
+  background-color: black;
+  color: white;
+  border-radius: 38%;
+}
+
+.friend__content.gr {
+  position: relative;
+}
+
+.index__badge {
+  position: absolute;
+  top: 0px;
+  right: -30px;
+  font-size: 11px;
+  color: white;
+  background-color: #dc5d46;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  animation: badgeBig 1s ease-in-out infinite;
+}
+
+@keyframes badgeBig {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: none;
+  }
 }
 
 .friend__content .friend__name {
@@ -50,7 +110,7 @@
   padding: 5px 10px;
   border-radius: 15px;
   border: 2px solid #52e084;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .friend__now-listening span {
@@ -58,7 +118,7 @@
 }
 
 .friend__now-listening i {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .friend__add-btn {

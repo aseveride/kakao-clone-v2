@@ -19,9 +19,12 @@
 }
 .chats-body {
   background-image: url("../images/chatBg.png");
-  min-height: 1000vh;
+  min-height: 150vh;
 }
 
+.chats__chat {
+  margin-bottom: 10px;
+}
 .chat__write--container {
   position: fixed;
   bottom: 0;
